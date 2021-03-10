@@ -23,7 +23,8 @@ class SignUpRepositoryImpl(private val auth: FirebaseAuth, private val database:
                         .setValue(
                             User(
                                 name = "Пользователь №$id",
-                                email = email
+                                email = email,
+                                password = password
                             )
                         )
 
